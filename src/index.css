@@ -147,6 +147,7 @@ textarea, select {
 /* CSS VARIABLES */
 
 :root {
+
   --font-1: "Satoshi";
   --font-2: "Clash Display";
   --font-3: "STIX Two Text";
@@ -165,6 +166,7 @@ textarea, select {
   --color-7: #333;
 
   /* SIZES */
+  
   --size-1: 1rem;
   --size-2: 1.5rem;
   --size-3: 2rem;
