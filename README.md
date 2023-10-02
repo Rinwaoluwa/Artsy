@@ -1,8 +1,15 @@
-# React + Vite
+<!-- Hey guy welcome to Artsy 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    Let's endeavour to put our best in and do the best job we can.
 
-Currently, two official plugins are available:
+    We live through the challenge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    No man is an island of knowledge let's endeavour to ask qestions and speak up when we don't understand something (it helps everyone including youself you get to understand what you don't and nobody's job is slowed down)
+
+    Devs "Frontend" make sure that all elements have class names -- Do not select elements themselves.
+
+    e.g html: <h1 class="heading">Hello</h1> 
+        css: .heading ✅
+              h1 🚫 Forbidden do not do this!
+
+ -->
