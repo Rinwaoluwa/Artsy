@@ -13,6 +13,8 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+
+  font-size: 62.5%;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -60,3 +62,118 @@ textarea, select {
 }
 
 
+/* FONT DECLARATIONS */
+@font-face {
+  font-family: "Satoshi";
+  src: url(/fonts/Satoshi-Bold.woff), format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(/fonts/Satoshi-Light.woff), format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url(/fonts/Satoshi-Medium.woff), format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(/fonts/ClashDisplay-Bold.woff), format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(/fonts/ClashDisplay-Light.woff), format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(/fonts/ClashDisplay-Medium.woff), format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: url(/fonts/STIXTwoText-Bold.woff2), format('woff2');
+  font-weight: bold;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: url(/fonts/STIXTwoText-Regular.woff2), format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "STIX Two Text";
+  src: url(/fonts/STIXTwoText-Medium.woff2), format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Light.ttf), format('ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Bellefair';
+  src: url(/fonts/Bellefair-Regular.ttf), format('ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Baskervville';
+  src: url(/fonts/Baskervville-Regular.ttf), format('ttf');
+  font-weight: lighter;
+}
+
+/* CSS VARIABLES */
+
+:root {
+
+  --font-1: "Satoshi";
+  --font-2: "Clash Display";
+  --font-3: "STIX Two Text";
+  --font-4: 'Poppins';
+  --font-5: 'Bellefair';
+  --font-6: 'Baskervville';
+
+  /* COLOR PALLETE */
+
+  --color-1: #272727;
+  --color-2: #28A814;
+  --color-3: #ffffff;
+  --color-4: #006CA2;
+  --color-5: #999EA5;
+  --color-6: #E27625;
+  --color-7: #333;
+
+  /* SIZES */
+  
+  --size-1: 1rem;
+  --size-2: 1.5rem;
+  --size-3: 2rem;
+  --size-4: 2.5rem;
+  --size-5: 3rem;
+  --size-6: 3.5rem;
+  --size-7: 4rem;
+  --size-8: 4.5rem;
+  --size-9: 5rem;
+}

@@ -1,0 +1,14 @@
+{
+    "extends": "react-app",
+
+    "rules": {
+        "react/prop-types": false,
+        "no-unused-vars": [
+          "error",
+          {
+            "severity": "warning",
+            "color": "yellow"
+          }
+        ]
+    }
+}
