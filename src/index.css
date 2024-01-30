@@ -65,82 +65,82 @@ textarea, select {
 /* FONT DECLARATIONS */
 @font-face {
   font-family: "Satoshi";
-  src: url(./assets/fonts/Satoshi-Bold.woff), format('woff');
+  src: url(/fonts/Satoshi-Bold.woff), format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url(./assets/fonts/Satoshi-Light.woff), format('woff');
+  src: url(/fonts/Satoshi-Light.woff), format('woff');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url(./assets/fonts/Satoshi-Medium.woff), format('woff');
+  src: url(/fonts/Satoshi-Medium.woff), format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash Display";
-  src: url(./assets/fonts/ClashDisplay-Bold.woff), format('woff');
+  src: url(/fonts/ClashDisplay-Bold.woff), format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash Display";
-  src: url(./assets/fonts/ClashDisplay-Light.woff), format('woff');
+  src: url(/fonts/ClashDisplay-Light.woff), format('woff');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Clash Display";
-  src: url(./assets/fonts/ClashDisplay-Medium.woff), format('woff');
-  font-weight: 500; 
+  src: url(/fonts/ClashDisplay-Medium.woff), format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "STIX Two Text";
-  src: url(./assets/fonts/STIXTwoText-Bold.woff2),format('woff2');
+  src: url(/fonts/STIXTwoText-Bold.woff2), format('woff2');
   font-weight: bold;
   font-style: normal;
 } 
 
 @font-face {
   font-family: "STIX Two Text";
-  src: url(./assets/fonts/STIXTwoText-Regular.woff2), format('woff2');
+  src: url(/fonts/STIXTwoText-Regular.woff2), format('woff2');
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "STIX Two Text";
-  src: url(./assets/fonts/STIXTwoText-Medium.woff2), format('woff2');
+  src: url(/fonts/STIXTwoText-Medium.woff2), format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url(./assets/fonts/Poppins-Light.ttf), format('ttf');
+  src: url(/fonts/Poppins-Light.ttf), format('ttf');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'Bellefair';
-  src: url(./assets/fonts/Bellefair-Regular.ttf), format('ttf');
+  src: url(/fonts/Bellefair-Regular.ttf), format('ttf');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: 'Baskervville';
-  src: url(./assets/fonts/Baskervville-Regular.ttf), format('ttf');
+  src: url(/fonts/Baskervville-Regular.ttf), format('ttf');
   font-weight: lighter;
 }
 
