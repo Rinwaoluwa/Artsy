@@ -1,0 +1,68 @@
+.thankyou-page {
+    overflow: hidden;
+}
+
+/* REMOVING THE SEARCH ICON */
+.thankyou-page > nav span:nth-child(1){
+    display:  none;
+}
+
+.thankyou {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10rem;
+}
+
+.blurs {
+    position: relative;
+    height: 30vh;
+}
+
+.blur-1, .blur-2, .blur-3 {
+    position: absolute;
+
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+
+    filter: blur(3rem);
+}
+
+.blur-1 {
+    background-color: var(--color-4);
+    top: 0rem;
+    left: -20rem;
+}
+
+.blur-2 {
+    background-color: var(--color-12);
+    top: -5rem;
+    right:  -10rem;
+}
+
+.blur-3 {
+    background-color: var(--color-6);
+    bottom: -8rem;
+    right: -18rem;
+}
+
+.thankyou-image {
+    position: absolute;
+    z-index: 99;
+}
+
+.thankyou-text-1, .thankyou-text-2 {
+    text-align: center;
+    font-family: var(--font-1)
+}
+
+.thankyou-text-1 {
+    font-size: var(--size-3);
+}
+
+.thankyou-text-2{
+    font-size: var(--size-2);
+    color: var(--color-1);
+}

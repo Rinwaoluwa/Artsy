@@ -1,0 +1,28 @@
+.mobile-drawer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--size-3);
+}
+
+.mobile-drawer-ul {
+   display: flex;
+   flex-direction: column;
+   margin: var(--size-9) 0;
+}
+
+.mobile-drawer-li{
+    font-family: var(--font-1);
+    font-size: var(--size-7);
+    font-weight: lighter;
+
+    list-style: none;
+    line-height: 3.2rem;
+    margin-bottom: var(--size-9);
+    margin-left: -2rem;
+}
+
+:global(.chatbox-icon) {
+    position: absolute;
+    right: var(--size-1);
+    bottom: var(--size-9);
+}

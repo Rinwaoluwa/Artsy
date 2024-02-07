@@ -1,0 +1,33 @@
+.page-route, .page-route-results {
+    margin-left: var(--size-1);
+    margin-bottom: var(--size-1);
+}
+
+.page-route {
+    display: flex;
+    gap: .5rem;
+
+    font-family:  var(--font-1);
+}
+
+.page-route-index {
+    font-size: var(--size-2);
+    font-weight: 500;
+    color: var(--color-5);
+}
+
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .page-route-index {
+        font-size: var(--size-3);
+    }
+
+    .page-route {
+        margin-left: var(--size-7);
+    }
+
+    .art {
+        background-color: transparent;
+    }
+}

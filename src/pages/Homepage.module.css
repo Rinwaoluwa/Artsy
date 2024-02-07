@@ -1,0 +1,10 @@
+.homepage {
+    overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 70em) { /*700px*/
+    html {
+        font-size: 93.6%;
+    }
+}

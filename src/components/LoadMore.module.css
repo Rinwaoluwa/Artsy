@@ -1,0 +1,22 @@
+.load-more_btn {
+    display: flex;
+    align-items: center;
+    gap:var(--size-1);
+    border: none;
+    background-color: transparent;
+
+    font-family: var(--font-1);
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.load-more_text {
+    font-size: var(--size-3);
+}
+
+.load-more_btn > span {
+    background-color: transparent;
+    border: calc(var(--size-1) - .9rem) solid black;
+    border-radius: 50%;
+    padding: var(--size-1);
+    margin-left: var(--font-3);
+}

@@ -31,7 +31,6 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   line-height: 1.5;
 }
 
@@ -51,7 +50,6 @@ h3, h4 {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
   display: block;
 }
 
@@ -164,9 +162,16 @@ textarea, select {
   --color-5: #999EA5;
   --color-6: #E27625;
   --color-7: #333;
+  --color-8: #E2E2E2;
+  --color-9: #F6F4F4;
+  --color-10: #616161;
+  --color-11: #F2F2F2;
+  --color-12: #9B62EC;
+  --color-13: #F4F2F2;
+  --color-14: #D9D9D9;
 
   /* SIZES */
-  
+
   --size-1: 1rem;
   --size-2: 1.5rem;
   --size-3: 2rem;

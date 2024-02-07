@@ -1,0 +1,45 @@
+.explore {
+    border-top: calc(var(--size-1) - .9rem) solid black;
+    border-bottom: calc(var(--size-1) - .9rem) solid black;
+
+    margin: var(--size-3) 0 var(--size-5) 0;
+}
+
+.explore-marketplace, .auction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: var(--size-2);
+    font-family: var(--font-1);
+    font-weight: lighter;
+
+    padding: var(--size-1) calc(var(--size-1) - .8rem);
+}
+
+.explore-marketplace {
+    border-bottom: calc(var(--size-1) - .9rem) solid black;
+}
+
+.explore-marketplace-text, .auction-text {
+    margin: 0 var(--size-1);
+}
+
+.explore-marketplace-btn, .auction-btn{
+    background-color: transparent;
+    border: calc(var(--size-1) - .9rem) solid black;
+    border-radius: 50%;
+    padding: var(--size-1);
+    margin: 0 var(--size-1);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .explore-marketplace-text, .auction-text {
+        font-size: var(--size-7);
+    }
+
+    .explore-marketplace, .auction {
+        padding: var(--size-3) var(--size-1);
+    }
+}

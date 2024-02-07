@@ -1,0 +1,17 @@
+.stats {
+    padding: var(--size-3) var(--size-1);
+}
+
+.product, .shipping,
+.total {
+    color: var(--color-5);
+    font-size: var(--size-3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-count, .shipping-fee,
+.total-amount {
+    color: var(--color-1);
+    font-weight: 500;
+}

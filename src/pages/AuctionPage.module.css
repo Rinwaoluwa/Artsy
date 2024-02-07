@@ -1,0 +1,75 @@
+/* REMOVING THE SEARCH ICON */
+.auction-page > nav span:nth-child(1){
+    display:  none;
+}
+
+.auction {
+    margin: 0 0 0 .5rem;
+}
+
+.auction-overview-text {
+    font-family: var(--font-1);
+    font-weight: lighter;
+    font-size: calc(var(--size-2) + .3rem);
+}
+
+.auction-image-gliders {
+    margin-top: var(--size-2);
+    margin-bottom: var(--size-9);
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    z-index: 99;
+    background-color: #ffffff5f;
+    border-radius: 50%;
+    filter: drop-shadow(0 2rem 3rem #00000076);
+    padding: var(--size-2) var(--size-2);
+    top: 20rem;
+}
+
+/* Selecting the direct child of the direct child */
+/* i.e <span className="arrow-head-left-icon"><svg class="arrow-head-left-icon_svg"></svg></span> */
+.left-arrow > * > *, .right-arrow > * > * {
+    height: var(--size-2);
+    width: var(--size-2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arrow {
+    left: var(--size-2);
+}
+
+.right-arrow {
+    transform: rotateY(180deg);
+    right: calc(var(--size-1) - .6rem);
+}
+
+:global(.ellipse) {
+    position: absolute ;
+
+    top: 35rem;
+    left: 45%;
+    right: 50%;
+
+    display: flex;
+}
+
+:global(.ellipse-icon_svg) {
+    height: var(--size-1);
+    width: var(--size-1);
+}
+
+.auction-top-creators {
+    font-family: var(--font-1) !important;
+    font-family: lighter;
+    font-size: var(--size-4);
+    margin-bottom: var(--size-1);
+}

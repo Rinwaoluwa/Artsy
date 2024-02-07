@@ -15,11 +15,16 @@ WE SHOULD CONSIDER FETCHING IMAGES DYNAMICALLY FROM AN API FOR WHEN USERS ARE SH
 
 amimations should be written inside the animations.css ? or what do you think.
 
+EXPLORE SECTION AND BILLBOARD SECTION NEEDS TO BE MORE FELXIBLE TO AVOID COMPLEX MEDIA QUERIES
+AND FIX FEATURED PRODUCTS HOVER
+
 page routing, authntication: email and passwords, unauthorised access: if users are not logged in what page can they access ?
 
+we'll use the url to store app state for the page route check page route component;
 PROGRESS REPORT TWICE A WEEK!: Just talk about what you have done for the week
 
 EXPECTING ARTSY TO BE DONE BY END OF FEBURARY!
 
 
 A MUST!: RESUABLE COMPONENTS MUST USE CSS STYLING IN JS COMPONENT (NO SEPARATE FILE STYLING).
+

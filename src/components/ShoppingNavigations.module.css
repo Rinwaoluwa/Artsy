@@ -1,0 +1,28 @@
+.shopping-nav-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--color-1);
+    margin: var(--size-3);
+    padding: var(--size-1) var(--size-2);
+
+    border-radius: var(--size-5);
+    position: relative;
+}
+
+.shopping-nav-mobile-shop, .shopping-nav-mobile-schedule {
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+
+    color: var(--color-3);
+}
+
+.highlight {
+    color: var(--color-1);
+    background-color: var(--color-3);
+    width: 50%;
+    text-align: center;
+    padding: calc(var(--size-1) - .2rem) calc(var(--size-2) - .6rem);
+    border-radius: var(--size-5);
+}

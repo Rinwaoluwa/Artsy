@@ -1,0 +1,77 @@
+.popular-bid {
+    margin: 0 var(--size-1);
+}
+
+.popular-bid-image-container {
+    position: relative;
+    padding: var(--size-6) var(--size-2) 0 var(--size-2);
+    box-shadow: var(--size-3) var(--size-3) var(--size-6) rgba(0, 0, 0, 0.2);
+    height: 100%;
+    border-radius: var(--size-2);
+    margin-bottom: var(--size-5);
+}
+.popular-bid-wishlist {
+    position: absolute;
+    top: calc(var(--size-1) - .2rem);
+    right: var(--size-1);
+
+    border:1px solid var(--color-1);
+    border-radius: 50%;
+    padding: calc(var(--size-1) - .3rem) calc(var(--size-1) - .3rem) calc(var(--size-1) - 1rem) calc(var(--size-1) - .3rem);
+}
+
+.popular-bid-image {
+    width: 100%;
+    margin-top: var(--size-3);
+}
+
+.popular-bid-texts {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--size-1) 0;
+}
+
+.popular-bid-text {
+    font-family: var(--font-1);
+    font-weight: bold;
+    font-size: var(--size-2);
+
+    margin-bottom: var(--size-1);
+}
+
+.popular-bid-caption {
+    font-size: var(--size-2);
+    margin-bottom: var(--size-5);
+    margin-left: var(--size-3);
+}
+
+.popular-bid-caption, .current-bid-text, .current-bid-number {
+    font-family: var(--font-1);
+    font-weight: bold;
+}
+
+.popular-bid-caption {
+    color: var(--color-5);
+}
+
+.place-bid {
+    display: flex;
+    background-color: var(--color-9);
+    margin: 0 calc(var(--size-1) -.9rem);
+    padding: var(--size-1) var(--size-2);
+    border-radius: var(--size-1);
+}
+
+.current-bid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.current-bid-text, .current-bid-number {
+    font-size: var(--size-2);
+}
+
+.current-bid-text {
+    color: var(--color-10);
+}

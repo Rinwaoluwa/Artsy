@@ -1,0 +1,24 @@
+.auction-figure {
+    position: relative;
+    margin-bottom: var(--size-2);
+}
+
+.auction-figure-image {
+    width: max-content;
+}
+
+.auction-figure-caption {
+    position: absolute;
+    left: var(--size-4);
+    bottom: var(--size-3);
+
+    background-color: #ffffff54;
+    border:1px solid #ffffffe7;
+    color: var(--color-3);
+    border-radius: var(--size-1);
+
+    font-family: var(--font-3);
+    font-weight: lighter;
+    font-size: var(--size-3);
+    padding: var(--size-1)  var(--size-4);
+}

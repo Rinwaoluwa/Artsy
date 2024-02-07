@@ -1,0 +1,26 @@
+.searchbar {
+    position: absolute;
+    top: 1rem;
+    /* top: var(--size-1);  ANIMATION FOR WHEN THE SEARCH BAR IS CLICKED */
+    width: 95%;
+    padding: var(--size-1) var(--size-2);
+    margin: 0 var(--size-1) 0 var(--size-1);
+
+    background-color: var(--color-3);
+    border: 1px dotted var(--color-5);
+    border-radius:  var(--size-6);
+    box-shadow: calc(var(--size-2) - var(--size-2)) 0 var(--size-1) rgba(0, 0, 0, 0.363);
+
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-input {
+    width: 100%;
+    outline: none;
+    border: none;
+
+    font-family: var(--font-1);
+    font-size: var(--size-2);
+}
+

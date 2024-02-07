@@ -1,0 +1,67 @@
+.drop {
+    margin: var(--size-9) var(--size-1);
+
+}
+
+.drop-art {
+    position: relative;
+}
+
+.drop-art-image {
+    width: 100%;
+}
+.drop-art-event, .drop-art-timeline {
+    position: absolute;
+    color: white;
+    font-family: var(--font-1);
+    padding: calc(var(--size-1) - .3rem) calc(var(--size-2) - .6rem);
+}
+.drop-art-event {
+    top: var(--size-1);
+    right: var(--size-1);
+    font-size: calc(var(--size-1) + .2rem);
+
+    text-align: center;
+
+    border-radius: calc(var(--size-1) - .5rem);
+    width: 30%;
+}
+
+.drop-art-timeline {
+    bottom: var(--size-1);
+    font-size: var(--size-3);
+
+    border: 1px solid var(--color-3);
+    border-radius: var(--size-1);
+    background-color: #ffffff41;
+
+    width: 90%;
+    margin: 0 var(--size-3);
+}
+
+.drop-art-caption {
+    margin-top: var(--size-3);
+    font-family: var(--font-1);
+}
+
+.drop-art-caption > * {
+    margin-bottom: var(--size-2);
+}
+
+.drop-art-date {
+    font-size: var(--size-3);
+}
+
+.drop-art-title {
+    font-size: var(--size-5);
+}
+
+.drop-art-text {
+    font-size: var(--size-2);
+    color: var(--color-10);
+}
+
+.drop-art-creator, .drop-art-get-notified {
+    font-size: var(--size-3);
+    font-weight: 500;
+}

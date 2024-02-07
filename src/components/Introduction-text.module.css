@@ -1,0 +1,29 @@
+.intro-text--1 {
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: var(--size-4);
+    text-align: center;
+
+    margin: var(--size-2) 0;
+}
+
+.intro-text--2 {
+    font-family: var(--font-1);
+    font-weight: lighter;
+    font-size: var(--size-2);
+    text-align: center;
+
+    margin: 0 var(--size-1);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .intro-text--1 {
+        font-size: var(--size-9);
+        margin-bottom: 3rem;
+    }
+
+    .intro-text--2 {
+        font-size: var(--size-3);
+    }
+}

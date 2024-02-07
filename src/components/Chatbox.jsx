@@ -1,12 +1,12 @@
 const styles = {
-    height: '64px', //maybe use % on this for flexibility
-    width: '64px',
+    height: '100%', //maybe use % on this for flexibility
+    width: '100%',
 }
 
 function chatbox() {
     return (
-        <div>
-            <svg style={styles} width="86" height="87" viewBox="0 0 86 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="chatbox-icon">
+            <svg className="chatbox-icon_svg" style={styles} width="86" height="87" viewBox="0 0 86 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_510_155)">
                     <circle cx="43" cy="40" r="32" fill="#3341C1"/>
                 </g>

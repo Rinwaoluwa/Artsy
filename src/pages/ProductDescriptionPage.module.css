@@ -1,0 +1,169 @@
+/* REMOVING THE SEARCH ICON */
+.product-description-page > nav span:nth-child(1){
+    display:  none;
+}
+
+.product-description-section {
+    font-family: var(--font-1);
+    border-top: var(--size-1) soid var(--color-7);
+}
+
+.product-description {
+    margin: 0 var(--size-5) var(--size-5) var(--size-5);
+    list-style: none;
+}
+
+.product-creator {
+    font-size: var(--size-2);
+}
+
+.product-country, .product-views {
+    font-size: var(--size-2);
+    opacity: 0.5;
+}
+
+.product-stats {
+    margin: var(--size-2) 0;
+}
+
+.product-purchase {
+    display: flex;
+    gap: 8%;
+    align-items: center;
+}
+
+.product-decrease, .product-count, .product-increase {
+    font-size: var(--size-2);
+    font-weight: bold;
+}
+
+.product-decrease, .product-count, .product-increase {
+    display: flex;
+    font-family: var(--font-1);
+    font-weight: lighter;
+    font-size: var(--size-3);
+}
+
+
+.product-wishlist {
+    height: 50%;
+    border-radius: calc(var(--size-1) - .5rem);
+    color: var(--color-3);
+}
+
+.product-wishlist {
+    padding: var(--size-1);
+    background-color: transparent;
+    border: 2px solid var(--color-5);
+}
+
+.product-about {
+    margin: 0 var(--size-1) var(--size-9) var(--size-1);
+    border-top: 1px solid var(--color-5);
+}
+
+.product-about-text {
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-5);
+    padding: var(--size-3) var(--size-3);
+}
+
+/* We shouldn't select elements with their tag names like this! */
+/* But this is an exception due to logical reasons */
+:global(.down-arrow > * svg) {
+    transform: rotate(270deg);
+}
+
+.product-more-from-collection {
+    font-family: var(--font-1);
+}
+
+.product-mfc-text {
+    font-size: var(--size-3);
+    font-weight: 500;
+    margin-left: .5rem;
+}
+
+.product-mfc-image-container {
+    border: 1px solid var(--color-1);
+    margin: var(--size-2) .5rem;
+    position: relative;
+    padding: var(--size-7) var(--size-1) var(--size-1) var(--size-1);
+}
+
+.product-heart-icon {
+    position: absolute;
+    top: calc(var(--size-1) - .2rem);
+    right: var(--size-1);
+}
+
+:global(.arrow-left), :global(.arrow-right) {
+    position: absolute;
+    top: 50%;
+    border: 1px solid var(--color-3);
+    border-radius: 50%;
+    padding: var(--size-1) var(--size-2);
+}
+
+:global(.arrow-left) {
+    left: var(--size-2);
+}
+
+:global(.arrow-right) {
+    right: var(--size-2);
+    transform: rotate(180deg);
+}
+
+.product-mfc-image {
+    width: 100%;
+}
+
+.product-mfc-caption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--size-1);
+}
+
+.product-mfc-caption-text {
+    font-size: var(--size-3);
+    align-self: center;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .product-item {
+        display: flex;
+        border: 1px solid var(--color-5);
+        margin: var(--size-7);
+        /* padding: var(--size-3) var(--size-2); */
+    }
+
+    .product-item > figure {
+        box-shadow: none;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-item > figure figcaption h5:nth-child(2) {
+        display: none;
+    }
+
+    .product-about-text--1 {
+        border-bottom: none;
+    }
+
+    .product-description-container {
+        width: 50%;
+        border-left: 1px solid var(--color-5);
+        padding: var(--size-3) 0;
+    }
+
+    .product-about {
+        margin: 0;
+    }
+}

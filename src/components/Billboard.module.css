@@ -1,0 +1,114 @@
+.billboard {
+    background-color: var(--color-8);
+    position: relative;
+
+    margin-bottom: calc(var(--size-9) + 10rem);
+    padding-top: .2rem;
+
+    height: 100%;
+}
+
+.billboard > * {
+    font-family: var(--font-2);
+}
+
+.billboard-list-items {
+    display: flex;
+    gap: var(--size-6);
+
+    font-weight: lighter;
+
+    position: relative;
+    left: 14rem;
+    overflow: hidden;
+}
+
+.billboard-list-item {
+    font-size: var(--size-2);
+}
+
+.billboard-top-creators-text {
+    font-weight: bold;
+    width: 70%;
+
+    font-size: var(--size-4);
+    margin-left: calc(var(--size-1) - .4rem);
+    margin-bottom: var(--size-6);
+}
+
+.billboard-top-creators-paragraph {
+    font-size: var(--size-2);
+    font-weight: lighter;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.billboard-circa{
+    font-weight: bold;
+    position: absolute;
+    top: 8rem;
+    right: .2rem;
+}
+
+.billboard-circa--1 {
+    font-size: 2.5rem;
+    text-align: end;
+    margin-bottom: 2.5rem;
+
+}
+
+.billboard-circa--2 {
+    font-size: var(--size-9);
+}
+
+.billboard-image {
+    width:  100%;
+
+    position: absolute;
+    z-index: 80;
+    top: calc(var(--size-9) + 5rem);
+    right: calc(var(--size-1) - 6rem);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .billboard {
+        height: 50rem;
+    }
+    .billboard-list-items {
+        gap: 20%;
+    }
+
+    .billboard-list-item {
+        font-size: var(--size-4);
+    }
+
+    .billboard-top-creators-text {
+        font-size: var(--size-6);
+        width: 50%;
+        margin: 0 var(--size-7);
+    }
+
+    .billboard-top-creators-paragraph {
+        font-size: var(--size-4);
+        margin: calc(var(--size-9));
+    }
+
+    .billboard-image {
+        width: 80%;
+        right: calc(var(--size-5) + var(--size-5));
+    }
+
+    .billboard-circa {
+        top: 30rem;
+        right: var(--size-9);
+    }
+
+    .billboard-circa--1 {
+        font-size: var(--size-9);
+    }
+
+    .billboard-circa--2 {
+        font-size: calc(var(--size-9) + var(--size-9));
+    }
+}

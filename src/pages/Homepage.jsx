@@ -1,15 +1,25 @@
-import MobileNavigation from "../components/MobileNavigation"
-
+import IntroductionText from "../components/Introduction-text";
+import Navigation from "../components/Navigation";
+import Gallery from "../components/Gallery";
+import styles from "./Homepage.module.css";
+import FeaturedProducts from "../components/FeaturedProducts";
+import Exibition from "../components/Exibition";
+import ExploreMarketPlace from "../components/ExploreMarketPlace";
+import Billboard from "../components/Billboard";
+import Footer from "../components/Footer";
 
 function Homepage() {
     return (
-        <main>
-            <MobileNavigation /> {/*Review all similar components in
-                mobile and web so as to discuss implementation style with adam
-            */}
-            {/*Discuss font size for all elements on page to ensure similarity across all views.*/}
-            
-
+        <main className={styles['homepage']}>
+            <Navigation />
+            <IntroductionText/>
+            <Gallery/>
+            <FeaturedProducts />
+            <Exibition />
+            <ExploreMarketPlace />
+            {/* change billbord image*/}
+            <Billboard />
+            <Footer />
         </main>
     )
 }

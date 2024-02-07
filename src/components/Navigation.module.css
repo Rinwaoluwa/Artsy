@@ -1,0 +1,44 @@
+.nav_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: var(--size-3) var(--size-1);
+}
+
+/* Desktop Styles*/
+.nav_desktop {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    /* 800px  using browser root font size 800px/16px*/
+    .nav_mobile {
+        display: none;
+    }
+
+    .nav_desktop {
+        display: flex;
+        justify-content: space-between;
+        margin: var(--size-7);
+    }
+
+    .nav_desktop > h1 {
+        align-self: center;
+    }
+
+    .nav_desktop--list-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10%;
+        list-style: none;
+    }
+
+    .nav_desktop--list-item {
+        font-family: var(--font-1);
+        font-size: var(--size-3);
+        align-self: center;
+    }
+}

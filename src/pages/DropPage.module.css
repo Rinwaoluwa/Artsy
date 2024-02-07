@@ -1,0 +1,45 @@
+.drop-page-section {
+    position: relative;
+}
+
+.drop-page-cta {
+    text-align: center;
+    font-family: var(--font-1);
+}
+
+.drop-page-cta > * {
+    margin-bottom: var(--size-3);
+}
+
+.drop-page-text {
+    font-size: var(--size-5);
+}
+
+.drop-page-paragraph{
+    color: var(--color-5);
+    font-size: var(--size-3);
+}
+
+.drop-page-btn {
+    background-color: transparent;
+    width: 60%;
+    padding: var(--size-1) var(--size-2);
+
+    font-size: var(--size-3);
+    font-weight: 500;
+
+    border: 1px solid var(--color-1);
+    border-radius: var(--size-1);
+}
+
+.drop-page-sort {
+    font-family: var(--font-1);
+    font-size: var(--size-2);
+
+    border: none;
+    background-color: transparent;
+
+    position: absolute;
+    right: var(--size-4);
+    margin: var(--size-1) 0;
+}

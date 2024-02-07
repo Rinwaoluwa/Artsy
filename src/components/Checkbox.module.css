@@ -1,0 +1,52 @@
+/* const style = {
+        display: 'flex',
+        fontFamily: 'var(--font-1)',
+        fontSize: 'var(--size-4)',
+        marginBottom: 'var(--size-2)',
+    }
+
+    const checkboxstyle = {
+        height: 'var(--size-3)',
+        width: 'var(--size-3)',
+        marginRight: 'var(--size-1)',
+    } */
+
+.checkbox {
+    font-family: var(--font-1);
+    font-size: var(--size-4);
+    margin-bottom: var(--size-2);
+
+    display: flex;
+}
+
+.real-checkbox {
+    height: var(--size-5);
+    width: var(--size-5);
+    margin-right: var(--size-1);
+
+    position: absolute;
+    right: calc(var(--size-1) - 2rem);
+
+    visibility: hidden;
+}
+
+.custom-checkbox {
+    background-color: var(--color-14);
+    height: var(--size-5);
+    width: var(--size-5);
+    border-radius: 3px;
+
+    position: relative;
+    margin-right: var(--size-1);
+}
+
+:global(.checkmark-icon) {
+    position: absolute;
+    left: 1rem;
+
+    opacity: 0;
+}
+
+.real-checkbox:checked + :global(.checkmark-icon) {
+    opacity: 1;
+}
