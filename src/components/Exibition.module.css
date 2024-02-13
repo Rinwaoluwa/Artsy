@@ -116,38 +116,16 @@
 }
 
 /* MEDIA QUERIES */
-@media(min-width: 50rem) {
-    .exibition-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .exibition-desktop {
-        display: block;
-        width: max-content;
-        padding-bottom: var(--size-1);
-
-        font-family: var(--font-1);
-        font-size: var(--size-5);
-        font-weight: lighter;
-        color: var(--color-3);
-        margin: var(--size-2) var(--size-7);
-
-        border-bottom: 1px solid var(--color-3);
-    }
-
-    .exibition-container-image {
-        margin: 0 var(--size-7) var(--size-7) var(--size-7);
-    }
-
+@media(min-width: 31.25rem) {
     .exibition-caption--text-1 {
-        margin: 22rem 0 var(--size-8) var(--size-9);
+        margin: 8rem 0 var(--size-8) var(--size-9);
         font-size: var(--size-4);
     }
 
     .exibition-caption--text-1::before {
         top: calc(var(--size-1) - .5rem);
     }
-    
+
     .exibition-caption--text-2 {
         margin-left: var(--size-9);
         font-size: var(--size-3);
@@ -160,9 +138,53 @@
     }
 
     .exibition-caption--text-3 {
-        margin-bottom: var(--size-7);
+        margin-bottom: var(--size-1);
         width: 60%;
         margin-left: calc(var(--size-9) + 1rem);
+    }
+
+
+}
+
+@media(min-width: 50rem) {
+    .exibition-container {
+        display: flex;
+        flex-direction: column;
+        /* height: 60rem; */
+    }
+    .exibition-desktop {
+        display: block;
+        width: max-content;
+        padding-bottom: var(--size-1);
+
+        font-family: var(--font-1);
+        font-size: var(--size-3);
+        font-weight: lighter;
+        color: var(--color-3);
+        margin: var(--size-2) var(--size-7);
+
+        border-bottom: 1px solid var(--color-3);
+    }
+
+    .exibition-container-image {
+        margin: 0 var(--size-7) var(--size-7) var(--size-7);
+    }
+
+    .exibition-image {
+        height: 50rem;
+    }
+
+    .exibition-caption {
+        width: 100%;
+    }
+
+    .exibition-caption--text-1 {
+        margin: 22rem 0 var(--size-8) var(--size-9);
+        font-size: var(--size-4);
+    }
+
+    .exibition-caption--text-3 {
+        margin-bottom: var(--size-7);
     }
 
     .exibition-btns {

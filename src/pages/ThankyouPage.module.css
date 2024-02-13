@@ -66,3 +66,22 @@
     font-size: var(--size-2);
     color: var(--color-1);
 }
+
+:global(.two-icon) {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .blurs {
+        display: none;
+    }
+
+    :global(.two-icon) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

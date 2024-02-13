@@ -22,3 +22,10 @@
     font-size: var(--size-2);
     color: var(--color-10);
 }
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .input {
+        width: 35rem;
+    }
+}

@@ -13,6 +13,10 @@
     font-size: calc(var(--size-2) + .3rem);
 }
 
+.auction-page-desktop {
+    display: none;
+}
+
 .auction-image-gliders {
     margin-top: var(--size-2);
     margin-bottom: var(--size-9);
@@ -20,6 +24,17 @@
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .auction-image-gliders::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+.auction-image-gliders {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .left-arrow, .right-arrow {
@@ -32,9 +47,7 @@
     top: 20rem;
 }
 
-/* Selecting the direct child of the direct child */
-/* i.e <span className="arrow-head-left-icon"><svg class="arrow-head-left-icon_svg"></svg></span> */
-.left-arrow > * > *, .right-arrow > * > * {
+.left-arrow span svg, .right-arrow span svg {
     height: var(--size-2);
     width: var(--size-2);
 
@@ -52,7 +65,7 @@
     right: calc(var(--size-1) - .6rem);
 }
 
-:global(.ellipse) {
+.ellipse {
     position: absolute ;
 
     top: 35rem;
@@ -72,4 +85,56 @@
     font-family: lighter;
     font-size: var(--size-4);
     margin-bottom: var(--size-1);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .auction-page-desktop {
+        display: block;
+        margin-bottom: var(--size-9);
+    }
+
+    .auction-overview-text {
+        margin: 0 var(--size-6);
+    }
+
+    .arrow-auction {
+        display: none;
+    }
+
+    .auction-image-gliders {
+        height: 25rem;
+        gap: 3%;
+        margin-top: var(--size-9);
+        margin-left: var(--size-6);
+    }
+
+    .ellipse {
+        top: 55rem;
+    }
+
+    .auction-top-creators {
+        margin-left: var(--size-6);
+    }
+
+    .auction-top-bids {
+        display: flex;
+        align-items: center;
+        overflow: scroll;
+        scroll-behavior: smooth;
+
+        margin-bottom: 10rem;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .auction-top-bids::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .auction-top-bids {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
 }

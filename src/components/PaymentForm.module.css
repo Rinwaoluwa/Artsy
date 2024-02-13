@@ -1,0 +1,131 @@
+.payment-text {
+    display: none;
+}
+
+.select-wallet {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+
+    margin-left: var(--size-1);
+}
+
+.secure-payment-text {
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+}
+
+.cta{
+    font-family: var(--font-1);
+    font-size: var(--size-3);
+    color: var(--color-5);
+}
+
+.key {
+    position: relative;
+}
+
+.key-label {
+    display: block;
+    margin: var(--size-2) 0;
+
+    font-family: var(--font-1);
+    font-weight: lighter;
+    font-size: var(--size-3);
+    color: var(--color-5);
+}
+
+.key-input {
+    width: 100%;
+    height: var(--size-6);
+    padding: var(--size-4) var(--size-2);
+
+    background-color: var(--color-11);
+    border: 1px solid var(--color-10);
+    border-radius: var(--size-1);
+    outline: none;
+
+    font-family: var(--font-1);
+    font-size: var(--size-2);
+    color: var(--color-10);
+}
+
+.key-image {
+    position: absolute;
+    top: var(--size-7);
+    right: var(--size-1);
+
+    height: var(--size-8);
+    width: var(--size-8);
+}
+
+.save-details {
+    margin: var(--size-4) 0;
+}
+
+.checkbox-label {
+    font-family: var(--font-1);
+    font-weight: lighter;
+    font-size: calc(var(--size-2) - .2rem);
+    color: var(--color-5);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+
+    .payment-text {
+        display: block;
+        font-family: var(--font-1);
+        font-size: var(--size-3);
+
+        position: absolute;
+        top: -5rem;
+        left: var(--size-9);
+    }
+
+    .cta {
+        max-width: 45rem;
+    }
+
+    .key-input {
+        width: 35rem;
+    }
+
+    .key-image {
+        left: 30rem;
+    }
+
+    .secure-payment {
+        position: relative;
+    }
+
+    .payment-form {
+        border: 1px solid var(--color-14);
+        padding: var(--size-4);
+        border-radius: var(--size-2);
+    }
+}
+
+@media(min-width: 62.5rem) { /*1000px*/
+    .payment-text {
+        left: 10rem;
+    }
+}
+
+@media(min-width: 81.25rem) { /* 1300px */
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .key-image {
+        top: calc(var(--size-9) + .5rem);
+    }
+}
+
+@media(min-width: 93.75rem) { /*1500px*/
+    .payment-text {
+        left: 30rem;
+    }
+}

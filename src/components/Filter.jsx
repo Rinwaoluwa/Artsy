@@ -3,7 +3,7 @@ import Search from "./Search"
 
 function Filter() {
     return (
-        <>
+        <>  {/*Mobile*/}
             <div className={styles['filter']}>
                 <select className={styles['fiter-product']} name="" id="">
                     <option value="">Filter</option>
@@ -18,6 +18,7 @@ function Filter() {
                 </select>
 
             </div>
+            {/*Desktop*/}
             <div className={styles['filter-desktop']}>
                 <div className={styles['fiter-products']}>
                     <Search fill={'var(--color-5)'}/>

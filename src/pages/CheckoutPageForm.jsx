@@ -3,15 +3,21 @@ import Input from "../components/Input";
 import Navigation from "../components/Navigation";
 import PageRoutes from "../components/PageRoutes";
 import Select from "../components/Select";
+import ShoppingCartItems from "../components/ShoppingCartItems";
+import ShoppingNavigations from "../components/ShoppingNavigations";
+import ShoppingCartStats from "../components/ShoppingCartStats";
 import styles from "./CheckoutPageForm.module.css";
 
 function CheckoutPageForm() {
     return (
         <main className={styles['checkout-form-page']}>
             <Navigation />
-            <PageRoutes />
+            <div className={styles['checkout-form-page-sub-nav']}>
+                <PageRoutes />
+                <ShoppingNavigations />
+            </div>
 
-            <section className={styles['checkout-form']}>
+            <section className={styles['checkout-form-section']}>
                 <form action="" method="post" className={styles['checkout-form']}>
                     <div className={styles['checkout-email']}>
                         <label htmlFor="email" className={styles['label']}>Your email</label>
@@ -39,6 +45,11 @@ function CheckoutPageForm() {
                         <a href="#" className={styles['redirect-to-cart']}>Go back to cart</a>
                     </footer>
                 </form>
+
+                <div className={styles['product-details']} >
+                    <ShoppingCartItems />
+                    <ShoppingCartStats />
+                </div>
             </section>
         </main>
     )

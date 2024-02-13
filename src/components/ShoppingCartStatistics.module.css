@@ -1,0 +1,103 @@
+/* CARE FULLY READ THIS SECTION ALTHOUGH THE CLASS NAMES CAN BE A LENGHTY */
+.checkout-section-items-statistics {
+    box-shadow: 3rem 0 2rem rgba(0, 0, 0, 0.358);
+}
+
+/* Up Arrow Icon */
+.checkout-section-items-statistics > span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.checkout-section-items-statistics > span svg {
+    transform: rotate(90deg);
+}
+/* END */
+
+.checkout-section-items-statistics, .checkout-section-items-grand-total {
+    font-family: var(--font-1);
+}
+
+.checkout-section-items-stats {
+    padding: var(--size-3) var(--size-1);
+}
+
+.checkout-section-grand-total {
+    color: var(--color-5);
+    font-size: var(--size-3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-section-grand-total-amount {
+    color: var(--color-1);
+    font-weight: 500;
+}
+
+.checkout-section-items-grand-total {
+    border-top: 1px dashed var(--color-5);
+}
+
+.checkout-section-grand-total {
+    padding: var(--size-3) var(--size-1);
+}
+
+.continue-shopping {
+    display: block;
+    text-align: center;
+    color: var(--color-1);
+
+    font-size: var(--size-3);
+    padding-bottom: var(--size-4);
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+
+    .checkout-section-items-statistics {
+        height: 30vh;
+        box-shadow: none;
+    }
+    /* Up Arrow Icon */
+    .checkout-section-items-statistics > span {
+        display: none;
+    }
+
+    .checkout-section-items-statistics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .checkout-section-items-grand-total {
+        font-size: var(--size-2);
+        margin-left: var(--size-1);
+        border: none;
+        order: 2;
+    }
+
+    .checkout-section-grand-total-amount {
+        margin-left: var(--size-1);
+    }
+
+    .shopping-buttons {
+        width: 35%;
+    }
+
+    .continue-shopping {
+        margin-top: var(--size-1);
+    }
+
+}
+
+@media(min-width: 62.5rem) { /*1000px*/
+    .checkout-section-items-statistics {
+        margin: 0 var(--size-2);
+    }
+
+    .checkout-section-items-grand-total {
+        font-size: var(--size-3);
+        width: 30%;
+    }
+}

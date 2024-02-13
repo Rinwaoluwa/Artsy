@@ -1,6 +1,6 @@
 const styles = {
-    height: '100%', //maybe use % on this for flexibility
-    width: '100%',
+    height: '10rem', //maybe use % on this for flexibility
+    width: '10rem',
 }
 
 function chatbox() {

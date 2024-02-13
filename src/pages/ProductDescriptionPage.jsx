@@ -42,17 +42,98 @@ function ProductDescriptionPage() {
                     </div>
                 </div>
 
+                <div className={styles['product-more-from-collection_Desktop']}>
+                    <h3 className={styles['product-mfc-text_Desktop']}>
+                        Explore more from this collection
+                    </h3>
+
+                        <div className={`${styles['arrow-left_Desktop']}
+                            ${styles['product-arrow-left_Desktop']}`
+                        }>
+                            <ArrowHeadLeft />
+                        </div>
+
+                        <div className={`${styles['arrow-right_Desktop']}
+                            ${styles['product-arrow-right_Desktop']}`
+                        }>
+                            <ArrowHeadLeft />
+                        </div>
+                </div>
+
                 <div className={styles['product-more-from-collection']}>
                     <h3 className={styles['product-mfc-text']}>More from this collection</h3>
-
                     <figure className={styles['product-mfc-image-container']}>
                         <div className={styles['product-heart-icon']}>
                             <Heart />
                         </div>
-                        <div className="arrow-left">
+                        <div className={`arrow-left ${styles['product-arrow-left']}`}>
                             <ArrowHeadLeft />
                         </div>
-                        <div className="arrow-right">
+                        <div className={`arrow-right ${styles['product-arrow-right']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <img src="/images/mfc.png" alt="More collection" className={styles['product-mfc-image']}/>
+                        <figcaption className={styles['product-mfc-caption']}>
+                            <span className={styles['product-mfc-caption-text']}>Sassy</span>
+                            <span className={styles['product-mfc-caption-text']}><Diamond />3.20</span>
+                        </figcaption>
+                    </figure>
+                    <figure className={styles['product-mfc-image-container']}>
+                        <div className={styles['product-heart-icon']}>
+                            <Heart />
+                        </div>
+                        <div className={`arrow-left ${styles['product-arrow-left']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <div className={`arrow-right ${styles['product-arrow-right']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <img src="/images/mfc.png" alt="More collection" className={styles['product-mfc-image']}/>
+                        <figcaption className={styles['product-mfc-caption']}>
+                            <span className={styles['product-mfc-caption-text']}>Sassy</span>
+                            <span className={styles['product-mfc-caption-text']}><Diamond />3.20</span>
+                        </figcaption>
+                    </figure>
+                    <figure className={styles['product-mfc-image-container']}>
+                        <div className={styles['product-heart-icon']}>
+                            <Heart />
+                        </div>
+                        <div className={`arrow-left ${styles['product-arrow-left']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <div className={`arrow-right ${styles['product-arrow-right']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <img src="/images/mfc.png" alt="More collection" className={styles['product-mfc-image']}/>
+                        <figcaption className={styles['product-mfc-caption']}>
+                            <span className={styles['product-mfc-caption-text']}>Sassy</span>
+                            <span className={styles['product-mfc-caption-text']}><Diamond />3.20</span>
+                        </figcaption>
+                    </figure>
+                    <figure className={styles['product-mfc-image-container']}>
+                        <div className={styles['product-heart-icon']}>
+                            <Heart />
+                        </div>
+                        <div className={`arrow-left ${styles['product-arrow-left']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <div className={`arrow-right ${styles['product-arrow-right']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <img src="/images/mfc.png" alt="More collection" className={styles['product-mfc-image']}/>
+                        <figcaption className={styles['product-mfc-caption']}>
+                            <span className={styles['product-mfc-caption-text']}>Sassy</span>
+                            <span className={styles['product-mfc-caption-text']}><Diamond />3.20</span>
+                        </figcaption>
+                    </figure>
+                    <figure className={styles['product-mfc-image-container']}>
+                        <div className={styles['product-heart-icon']}>
+                            <Heart />
+                        </div>
+                        <div className={`arrow-left ${styles['product-arrow-left']}`}>
+                            <ArrowHeadLeft />
+                        </div>
+                        <div className={`arrow-right ${styles['product-arrow-right']}`}>
                             <ArrowHeadLeft />
                         </div>
                         <img src="/images/mfc.png" alt="More collection" className={styles['product-mfc-image']}/>
@@ -62,6 +143,7 @@ function ProductDescriptionPage() {
                         </figcaption>
                     </figure>
                 </div>
+                    <button className={styles['product-explore-all']}>Explore all</button>
             </section>
         </main>
     )

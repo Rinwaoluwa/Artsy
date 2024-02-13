@@ -1,0 +1,47 @@
+.payment-summary {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .payment-summary {
+        display: block;
+
+        margin-top: var(--size-9);
+        max-width: 60rem;
+    }
+
+    .payment-summary > * {
+        margin-bottom: var(--size-5);
+    }
+
+    .payment-summary-text,
+    .payment-summary-wallet-details,
+    .payment-summary-address,
+    .payment-summary-delivery-details {
+        font-family: var(--font-1);
+    }
+
+    .payment-summary-text,
+    .payment-summary-details,
+    .payment-summary-delivery {
+        border-bottom: 1px solid var(--color-14);
+        padding-bottom: var(--size-3);
+    }
+
+    .payment-summary-text {
+        font-size: var(--size-3);
+    }
+
+
+    .payment-summary-wallet-details {
+        font-size: var(--size-3);
+        font-weight: 500;
+        color: var(--color-1);
+    }
+
+    .payment-summary-address,
+    .payment-summary-delivery-details {
+        font-size: var(--size-3);
+    }
+}

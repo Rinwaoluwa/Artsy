@@ -5,15 +5,16 @@ import NotificationBell from './NotificationBell';
 import Search from './Search';
 
 import styles from './Navigation.module.css';
+import { Link } from 'react-router-dom';
 
-// COSIDER RE IMPLEMENTATION
-// THERE SURE WOULD BE A WAY WE CAN USE 1 FILE FOR BOTH DESKTOP AND MOILE NAVIGATION
 function Navigation() {
     return (
         <>
             {/* Mobile */}
             <nav className={styles['nav_mobile']}>
-                <HamburgerMenu />
+                <Link to={'/drawer'} >
+                    <HamburgerMenu />
+                </Link>
                 <ArtsyText />
 
                 <div className="nav_mobile-items">
@@ -26,10 +27,21 @@ function Navigation() {
                 <ArtsyText />
 
                 <div className={styles['nav_desktop--list-items']}>
-                    <li className={`${styles['nav_desktop--list-item']}`}>Home</li>
-                    <li className={`${styles['nav_desktop--list-item']}`}>Marketplace</li>
-                    <li className={`${styles['nav_desktop--list-item']}`}>Auctions</li>
-                    <li className={`${styles['nav_desktop--list-item']}`}>Drop</li>
+                    <li className={`${styles['nav_desktop--list-item']}`}>
+                        <Link to={'/'}>Home</Link>
+                    </li>
+
+                    <li className={`${styles['nav_desktop--list-item']}`}>
+                        <Link to={'/products'}>Marketplace</Link>
+                    </li>
+
+                    <li className={`${styles['nav_desktop--list-item']}`}>
+                        <Link to={'/auctions'}>Auctions</Link>
+                    </li>
+
+                    <li className={`${styles['nav_desktop--list-item']}`}>
+                        <Link to={'/drops'}>Drop</Link>
+                    </li>
                 </div>
 
                 <div className={styles['nav_desktop--list-items']}>

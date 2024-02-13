@@ -1,11 +1,13 @@
 import Navigation from "../components/Navigation";
+import TwoCircles from "../components/TwoCircles";
 import styles from "./ThankyouPage.module.css";
 
 function ThankyouPage() {
     return (
         <main className={styles['thankyou-page']}>
             <Navigation />
-            <section className={styles['thankyou']} >
+            <section className={styles['thankyou']}>
+                <TwoCircles />
                 <div className={styles['blurs']}>
                     <div className={styles['blur-1']}></div>
                     <div className={styles['blur-2']}></div>

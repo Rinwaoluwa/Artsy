@@ -15,7 +15,7 @@ function PopularBids() {
                     <h3 className={styles['popular-bid-text']}>0.57 ETH</h3>
                 </div>
             </div>
-            <figcaption className={'popular-bid-captions'}>
+            <figcaption className={styles['popular-bid-captions']}>
                 <h3 className={styles['popular-bid-caption']}>Creator:  <a href="#">Rinwaoluwa</a> </h3>
                 <h3 className={styles['popular-bid-caption']}>Date:  12/08/22</h3>
                 <div className={styles['place-bid']}>

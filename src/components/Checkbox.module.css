@@ -1,19 +1,6 @@
-/* const style = {
-        display: 'flex',
-        fontFamily: 'var(--font-1)',
-        fontSize: 'var(--size-4)',
-        marginBottom: 'var(--size-2)',
-    }
-
-    const checkboxstyle = {
-        height: 'var(--size-3)',
-        width: 'var(--size-3)',
-        marginRight: 'var(--size-1)',
-    } */
-
 .checkbox {
     font-family: var(--font-1);
-    font-size: var(--size-4);
+    font-size: var(--size-2);
     margin-bottom: var(--size-2);
 
     display: flex;
@@ -32,8 +19,8 @@
 
 .custom-checkbox {
     background-color: var(--color-14);
-    height: var(--size-5);
-    width: var(--size-5);
+    height: var(--size-3);
+    width: var(--size-3);
     border-radius: 3px;
 
     position: relative;
@@ -42,7 +29,7 @@
 
 :global(.checkmark-icon) {
     position: absolute;
-    left: 1rem;
+    left: .5rem;
 
     opacity: 0;
 }

@@ -20,3 +20,10 @@
     font-family: var(--font-1);
     font-size: var(--size-2);
 }
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .select {
+        width: 35rem;
+    }
+}

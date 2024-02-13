@@ -15,3 +15,39 @@
     color: var(--color-1);
     font-weight: 500;
 }
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .stats {
+        order: 1;
+    }
+
+    .product-count {
+        margin-left: calc(var(--size-1) - .8rem);
+    }
+
+    .product, .shipping,
+    .total {
+        font-size: calc(var(--size-2) + .3rem);
+        margin-bottom: var(--size-3);
+    }
+}
+
+@media(min-width: 62.5rem) { /*1000px*/
+    .product, .shipping,
+    .total {
+        font-family: var(--font-1);
+        font-size: var(--size-2);
+    }
+
+    .product-count {
+        margin-left: var(--size-3);
+    }
+}
+
+@media(min-width: 62.5rem) { /*1800px*/
+    .product, .shipping,
+    .total {
+        font-size: var(--size-3);
+    }
+}

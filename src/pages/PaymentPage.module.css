@@ -3,6 +3,10 @@
     display:  none;
 }
 
+.payment-page-sub-nav > nav {
+    display: none;
+}
+
 .payment {
     margin: var(--size-6) var(--size-1);
 }
@@ -21,96 +25,58 @@
     color: var(--color-5);
 }
 
-.select-wallet {
-    display: flex;
-    gap: 3%;
-    align-items: center;
-
-    margin-left: var(--size-1);
-}
-
-.secure-payment-text {
-    font-family: var(--font-1);
-    font-size: var(--size-3);
-}
-
-.cta{
-    font-family: var(--font-1);
-    font-size: var(--size-3);
-    color: var(--color-5);
-}
-
-.payment-options {
-    display: flex;
-    justify-content: space-around;
-    margin: var(--size-2) 0;
-}
-
-.add-more {
-    font-family: var(--font-1);
-    font-weight: bold;
-    font-size: var(--size-5);
-
-    align-self: center;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: max-content;
-    padding: calc(var(--size-1) - 1rem) calc(var(--size-2) - .4rem);
-}
-
-.key {
-    position: relative;
-}
-
-.key-label {
-    display: block;
-    margin: var(--size-2) 0;
-
-    font-family: var(--font-1);
-    font-weight: lighter;
-    font-size: var(--size-3);
-    color: var(--color-5);
-}
-
-.key-input {
-    width: 100%;
-    height: var(--size-6);
-    padding: var(--size-4) var(--size-2);
-
-    background-color: var(--color-11);
-    border: 1px solid var(--color-10);
-    border-radius: var(--size-1);
-    outline: none;
-
-    font-family: var(--font-1);
-    font-size: var(--size-2);
-    color: var(--color-10);
-}
-
-.key-image {
-    position: absolute;
-    top: var(--size-7);
-    right: var(--size-1);
-
-    height: var(--size-8);
-    width: var(--size-8);
-}
-
-.save-details {
-    margin: var(--size-4) 0;
-}
-
-.checkbox-label {
-    font-family: var(--font-1);
-    font-weight: lighter;
-    font-size: calc(var(--size-2) - .2rem);
-    color: var(--color-5);
-}
-
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     font-family: var(--font-1);
+    margin-bottom: var(--size-4)
+}
+
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .payment-page {
+        margin: var(--size-9);
+        position: relative;
+    }
+
+    /* Removing the page routes */
+    .payment-page-sub-nav > div {
+        display: none;
+    }
+    /* Adding the shopping navigation */
+    .payment-page-sub-nav > nav:nth-child(3) {
+        display: flex;
+    }
+
+    .secure {
+        position: absolute;
+        right: 0;
+        width: 15rem;
+    }
+
+    .payment {
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+        margin-top: 10rem;
+
+        position: relative;
+    }
+
+    .footer > button {
+        width: 40rem;
+        margin: 0;
+    }
+
+}
+
+@media(min-width: 81.25rem) { /* 1300px */
+    .footer > button {
+        margin: 0 10rem;
+    }
+}
+
+@media(min-width: 93.75rem) { /*1500px*/
+    .footer > button {
+        margin: 0 30rem;
+    }
 }

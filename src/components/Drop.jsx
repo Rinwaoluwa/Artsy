@@ -4,10 +4,14 @@ function Drop({event, access}) {
     return (
         <figure className={styles['drop']}>
             <div className={styles['drop-art']}>
-                <img src="/images/drop.png" alt="Art Figure" className={styles['drop-art-image']}/>
+                <div className={styles['drop-art-image-container']}>
+                    <img src="/images/drop.png" alt="Art Figure" className={styles['drop-art-image']}/>
+                    <div className={styles['drop-art-event']} style={{backgroundColor: "var(--color-2)"}}>
+                        {event}
+                    </div>
+                </div>
                 {/* CREATE FUNCTIONALITY TO CHANGE BACKGROUND  COLOR*/}
                 {/* ACCORDING TO EVENT TYPE */}
-                <div className={styles['drop-art-event']} style={{backgroundColor: "var(--color-2)"}}>{event}</div>
                 <div className={styles['drop-art-timeline']}>
                     <div className={styles['drop-art-time-left']}>Time Remaining</div>
                     <div className={styles['drop-art-timer']}>06 hrs : 45 min : 22 s</div>

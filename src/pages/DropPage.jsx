@@ -1,5 +1,6 @@
 import Drop from "../components/Drop"
 import Navigation from "../components/Navigation"
+import Footer from "../components/Footer"
 import styles from "./DropPage.module.css"
 
 function DropPage() {
@@ -20,6 +21,7 @@ function DropPage() {
                 <Drop event={'UPCOMING'} access={'Get notified'}/>
                 <Drop event={'LIVE NOW'} access={'Join now'}/>
                 <Drop event={'ENDED'} access={'View'}/>
+                <Footer />
             </section>
         </main>
     )

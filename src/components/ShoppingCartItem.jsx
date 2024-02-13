@@ -5,7 +5,9 @@ function ShoppingCartItems() {
     return (
         <li className={styles['cart-item']}>
             <div className={styles['cart-item-info']}>
-                <img src="/images/cartitem.png" alt="" className={styles['cart-item-image']}/>
+                <div className={styles['cart-item-image-container']}>
+                    <img src="/images/cartitem.png" alt="" className={styles['cart-item-image']}/>
+                </div>
                 <div className={styles['cart-item-details']}>
                     <p className={styles['cart-item-paragraph']}>Editorial</p>
                     <h3 className={styles['cart-item-name']}>Philomena</h3>
@@ -17,7 +19,7 @@ function ShoppingCartItems() {
                 </div>
             </div>
             <div className={styles['remove-cart-item']}>
-                <CloseX height="10px" width="10px"/>
+                <CloseX height="15px" width="15px"/>
                 <div className={styles['cart-item-price']}>
                     ₦340,000
                 </div>

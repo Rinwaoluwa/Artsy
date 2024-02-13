@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 function ArtsyText() {
     const styles = {
-            fontFamily: "var(--font-3)", // will this work ? or we should specify the actual font name
-            fontWeight: "bold",
-            fontSize: "var(--size-3)", // I think we should be using percentage on this for flexibility
+        fontFamily: "var(--font-3)",
+        fontWeight: "bold",
+        fontSize: "var(--size-3)", 
     }
     return (
         <h1 style={styles} className="artsy-main-text">
-            ARTSY.
+            <Link to={'/'}>ARTSY.</Link>
         </h1>
     )
 }

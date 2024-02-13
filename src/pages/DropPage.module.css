@@ -43,3 +43,14 @@
     right: var(--size-4);
     margin: var(--size-1) 0;
 }
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .drop-page-btn {
+        width: 30rem;
+    }
+
+    .drop-page-sort {
+        display: none;
+    }
+}

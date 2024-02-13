@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.drop-art-image-container {
+    position: relative;
+}
+
 .drop-art-image {
     width: 100%;
 }
@@ -64,4 +68,28 @@
 .drop-art-creator, .drop-art-get-notified {
     font-size: var(--size-3);
     font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .drop {
+        display: flex;
+        margin: var(--size-9) var(--size-9) var(--size-5) var(--size-9);
+        justify-content: center;
+        align-items: center;
+        gap: var(--size-2);
+    }
+
+    .drop-art {
+        width: 60rem;
+        margin-right: var(--size-9);
+    }
+
+    .drop-art-caption {
+        width: 60rem;
+    }
+
+    .drop-art-timeline {
+        height: 8rem;
+    }
 }

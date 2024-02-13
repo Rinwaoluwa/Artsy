@@ -1,6 +1,7 @@
 import LocationIcon from './LocationIcon';
 import MailIcon from './MailIcon';
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -26,10 +27,18 @@ function Footer() {
 
                 <div className={styles['footer-desktop-widgets']}>
                     <ul className={styles['footer-desktop-widget']}>
-                        <li className={styles['widget-item']}>Home</li>
-                        <li className={styles['widget-item']} >Marketplace</li>
-                        <li className={styles['widget-item']}>Auctions</li>
-                        <li className={styles['widget-item']}>Drops</li>
+                        <li className={styles['widget-item']}>
+                            <Link to={'/'}>Home</Link>
+                        </li>
+                        <li className={styles['widget-item']}>
+                            <Link to={'/products'}>Marketplace</Link>
+                        </li>
+                        <li className={styles['widget-item']}>
+                            <Link to={'/auctions'}>Auctions</Link>
+                        </li>
+                        <li className={styles['widget-item']}>
+                            <Link to={'/drops'}>Drops</Link>
+                        </li>
                     </ul>
                     <ul className={styles['footer-desktop-widget']}>
                         <li className={styles['widget-item']}>Blog</li>

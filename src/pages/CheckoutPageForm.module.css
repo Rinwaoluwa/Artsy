@@ -3,8 +3,13 @@
     display:  none;
 }
 
-.checkout-form {
-    margin: var(--size-6) var(--size-1) var(--size-9) var(--size-1);
+.checkout-form-section {
+    margin: var(--size-6) var(--size-9) var(--size-9) var(--size-9);
+}
+
+
+.checkout-form-page-sub-nav > nav {
+    display: none;
 }
 
 .label {
@@ -60,4 +65,53 @@
 .redirect-to-cart {
     margin-top: var(--size-3);
     color: var(--color-1);
+}
+
+.product-details {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    /* Removing the page routes */
+    .checkout-form-page-sub-nav > div {
+        display: none;
+    }
+    /* Adding the shopping navigation */
+    .checkout-form-page-sub-nav > nav:nth-child(3) {
+        display: flex;
+    }
+
+    .input {
+        width: 35rem;
+    }
+
+    .checkout-form-section {
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+        margin: 0 var(--size-9);
+    }
+
+    .checkout-form {
+        margin-top: var(--size-4);
+        margin-left: var(--size-8);
+    }
+
+    .redirect-to-cart {
+        display: none;
+    }
+
+    .product-details {
+        display: block;
+    }
+
+    .product-details > div:nth-child(1) {
+        margin: calc(var(--size-9) + var(--size-5)) 0 var(--size-5) 0;
+    }
+
+    .product-details > div:nth-child(2) {
+        border-top: 1px solid var(--color-14);
+        width: 100%;
+    }
 }

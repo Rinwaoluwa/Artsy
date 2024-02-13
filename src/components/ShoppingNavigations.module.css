@@ -18,11 +18,49 @@
     color: var(--color-3);
 }
 
-.highlight {
+.highlight-mobile {
     color: var(--color-1);
     background-color: var(--color-3);
     width: 50%;
     text-align: center;
     padding: calc(var(--size-1) - .2rem) calc(var(--size-2) - .6rem);
     border-radius: var(--size-5);
+}
+
+.shopping-nav-desktop {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 50rem) {
+    .shopping-nav-mobile {
+        display: none;
+    }
+
+    .shopping-nav-desktop {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .shopping-nav-lists {
+        margin-top: var(--size-5);
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+        border-bottom: 1px solid var(--color-14);
+        width: 60rem;
+    }
+
+    .shopping-nav-li {
+        font-family: var(--font-1);
+        font-size: var(--size-4);
+        color: var(--color-14);
+
+        list-style: none;
+    }
+
+    .highlight-desktop {
+        border-bottom: 1px solid var(--color-1);
+        color: var(--color-1);
+    }
 }

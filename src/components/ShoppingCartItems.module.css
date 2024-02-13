@@ -5,3 +5,20 @@
     height: 55vh;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.shopping-cart-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .shopping-cart-items {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+@media(min-width: 50rem) {
+  .shopping-cart-items {
+    margin: 0 10rem;
+  }
+}
