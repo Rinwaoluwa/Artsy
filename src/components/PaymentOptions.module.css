@@ -30,7 +30,7 @@
     .payment-options {
         position: absolute;
         top: -2rem;
-        left: 20rem;
+        right: -2rem;
     }
 
     .payment-option {
@@ -41,11 +41,5 @@
     .add-more {
         font-size: var(--size-2);
         padding: calc(var(--size-1) - .8rem) calc(var(--size-2) - .6rem);
-    }
-}
-
-@media(min-width: 81.25rem) { /* 1300px */
-    .payment-options {
-        left: 25rem;
     }
 }

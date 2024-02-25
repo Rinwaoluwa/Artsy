@@ -41,7 +41,7 @@ function FakeChatSupport({openSupport}) {
     }
 
     const processMessage = (message) => {
-        switch (message.toLowerCase()) {
+        switch (message.toLowerCase().trim()) {
           case 'hello':
           case 'hi':
           case 'hey':

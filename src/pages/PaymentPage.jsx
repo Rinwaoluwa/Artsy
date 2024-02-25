@@ -23,8 +23,6 @@ function PaymentPage() {
                 <PaymentSummary />
            </section>
 
-           {/* FIX THIS LARGE SCREEN SIZES */}
-
             <footer className={styles['footer']}>
                 <Button>Confirm</Button>
             </footer>

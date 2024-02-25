@@ -1,6 +1,8 @@
 /* REMOVING THE SEARCH ICON */
-.product-description-page > nav span:nth-child(1){
-    display:  none;
+.product-description-page {
+    :global(.search-icon) {
+        display: none;
+    }
 }
 
 .product-description-section {

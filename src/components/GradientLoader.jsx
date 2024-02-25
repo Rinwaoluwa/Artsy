@@ -9,7 +9,7 @@ function GradientLoader() {
       <div className={styles['loader']} >
         <div className={`${styles['gradient-border']} animateGradient`} id={styles['box']}>Artsy</div>
         <h3 className={styles['reload']}>If this message does not go away, try
-          <a className={styles['reload-link']} onClick={handleClick}>{' '}reloading.</a>
+          <a className={styles['reload-link']} onClick={handleClick}>{' '}reloading</a>.
         </h3>
       </div>
     )
