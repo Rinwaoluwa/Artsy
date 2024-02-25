@@ -1,6 +1,5 @@
-
-
-/* REMOVING THE SEARCH ICON */
-.checkout > nav span:nth-child(1){
-    display:  none;
+.checkout {
+    :global(.search-icon) {
+        display: none;
+    }
 }

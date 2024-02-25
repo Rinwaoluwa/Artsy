@@ -62,21 +62,16 @@
         position: relative;
     }
 
-    .footer > button {
-        width: 40rem;
-        margin: 0;
+    .footer{
+        /* width: 40rem;
+        margin: 0; */
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 40%;
+        }
     }
 
-}
-
-@media(min-width: 81.25rem) { /* 1300px */
-    .footer > button {
-        margin: 0 10rem;
-    }
-}
-
-@media(min-width: 93.75rem) { /*1500px*/
-    .footer > button {
-        margin: 0 30rem;
-    }
 }

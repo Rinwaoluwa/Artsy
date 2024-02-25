@@ -31,7 +31,7 @@ function Footer() {
                             <Link to={'/'}>Home</Link>
                         </li>
                         <li className={styles['widget-item']}>
-                            <Link to={'/products'}>Marketplace</Link>
+                            <Link to={'/product'}>Marketplace</Link>
                         </li>
                         <li className={styles['widget-item']}>
                             <Link to={'/auctions'}>Auctions</Link>
@@ -41,11 +41,11 @@ function Footer() {
                         </li>
                     </ul>
                     <ul className={styles['footer-desktop-widget']}>
-                        <li className={styles['widget-item']}>Blog</li>
-                        <li className={styles['widget-item']}>Wallets</li>
+                        <li className={styles['widget-item']}>Developers & Designer</li>
+                        <li className={styles['widget-item']}>Rinwa Odejobi</li>
+                        <li className={styles['widget-item']}>Favour Benjamin</li>
                         {/* Get an Api that tell rates and dicovers the country a user is in */}
-                        <li className={styles['widget-item']}>Rates</li>
-                        <li className={styles['widget-item']}>High Bids</li>
+                        <li className={styles['widget-item']}>Adam Ajani</li>
                     </ul>
                 </div>
 

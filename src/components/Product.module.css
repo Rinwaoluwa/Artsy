@@ -29,10 +29,6 @@
         border-radius: var(--size-2);
     }
 
-    .art--image {
-        width: 100%;
-    }
-
     .art--caption {
         flex-direction: column;
         margin-bottom: 0;

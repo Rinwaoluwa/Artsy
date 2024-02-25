@@ -1,0 +1,67 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* probably do this for dark mode */
+    /* background-color: #1d1f20; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    color: white;
+    font-family: var(--font-1);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1D1F20;
+    position: relative;
+}
+
+#box::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-image: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    background-size: 300% 300%;
+    animation: rotate 1.5s infinite linear;
+}
+
+.gradient-border {
+    border-radius: 50%;
+}
+
+.reload {
+    position: absolute;
+    bottom: 100px;
+
+    font-family: var(--font-3);
+    font-size: 15px;
+}
+
+.reload-link {
+    color: #6900ff;;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* WE NEED THIS ANIMATION HERE BECAUSE WE WANT IT ON THE ::after PSEUDO ELEMENT */
+
+@keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+}

@@ -62,12 +62,13 @@
 }
 
 .billboard-image {
-    width:  100%;
+    width: 30rem;
+    height: 20rem;
 
     position: absolute;
     z-index: 80;
-    top: calc(var(--size-9) + 5rem);
-    right: calc(var(--size-1) - 6rem);
+    top: calc(var(--size-9) + var(--size-8));
+    right: calc(var(--size-1) - 4rem);
 }
 
 /* MEDIA QUERIES */
@@ -95,7 +96,11 @@
     }
 
     .billboard-image {
-        width: 80%;
+        width: 80rem;
+        height: 60rem;
+        /* width: 70vw;
+        height: 80vh; */
+        top: var(--size-3);
         right: calc(var(--size-5) + var(--size-5));
     }
 

@@ -1,5 +1,6 @@
 .stats {
     padding: var(--size-3) var(--size-1);
+    font-family: var(--font-1);
 }
 
 .product, .shipping,

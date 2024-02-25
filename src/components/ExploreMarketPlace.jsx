@@ -8,7 +8,7 @@ function ExploreMarketPlace() {
             <div className={styles['explore-marketplace']}>
                 <h3 className={styles['explore-marketplace-text']}>Explore Marketplace</h3>
                 <span className={styles['explore-marketplace-btn']}>
-                    <Link to={'/products'}>
+                    <Link to={'/product'}>
                         <ForwardArrowIcon />
                     </Link>
                 </span>

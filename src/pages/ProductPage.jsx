@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Filter from "../components/Filter"
 import Footer from '../components/Footer';
 import LeftSidebar from "../components/LeftSidebar";
@@ -19,10 +18,7 @@ function ProductPage() {
             <section className={styles['product-section']}>
                 <LeftSidebar />
                 <div className={styles['products']}>
-                    {/* ISSUE with routing to Description Page "amchor" tag takes too much width*/}
-                    <Link to={'/description'}>
-                        <Product />
-                    </Link>
+                    <Product />
                     <Product />
                     <Product />
                     <Product />
@@ -34,7 +30,6 @@ function ProductPage() {
                 </div>
             </section>
             <button className={styles['product-see-more']}>See more</button>
-            <LoadMore />
             <Footer/>
         </main>
     )

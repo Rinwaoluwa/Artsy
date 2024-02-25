@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import ArrowHeadLeft from "./ArrowHeadLeft"
 import Button from "./Button"
 import ShoppingCartStats from "./ShoppingCartStats"
@@ -16,9 +18,11 @@ function ShoppingCartStatistics() {
                     <span className={styles['checkout-section-grand-total-amount']}>₦703,000</span>
                 </p>
             </div>
-            <div className={styles['shopping-buttons']} >
+            <div className={styles['shopping-buttons']}>
                 <Button>Proceed to checkout</Button>
-                <a className={styles['continue-shopping']} href="#">Continue Shopping</a>
+                <Link to='/product'>
+                    <span className={styles['continue-shopping']}>Continue Shopping</span>
+                </Link>
             </div>
         </div>
     )

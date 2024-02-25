@@ -1,6 +1,8 @@
 /* REMOVING THE SEARCH ICON */
-.auction-page > nav span:nth-child(1){
-    display:  none;
+.auction-page {
+    :global(.search-icon) {
+        display:  none;
+    }
 }
 
 .auction {
@@ -104,7 +106,6 @@
 
     .auction-image-gliders {
         height: 25rem;
-        gap: 3%;
         margin-top: var(--size-9);
         margin-left: var(--size-6);
     }

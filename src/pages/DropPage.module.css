@@ -1,3 +1,9 @@
+.drop-page {
+    :global(.search-icon) {
+        display: none;
+    }
+}
+
 .drop-page-section {
     position: relative;
 }

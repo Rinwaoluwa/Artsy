@@ -1,8 +1,8 @@
 .shopping-cart-items {
-    margin: 0 var(--size-1);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 55vh;
+  margin: 0 var(--size-1);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 55vh;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

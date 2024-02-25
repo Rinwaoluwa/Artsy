@@ -8,10 +8,24 @@
     margin-top: var(--size-4);
 }
 
-.see-more, .product-see-more {
+/* .see-more, .product-see-more {
     display: none;
-}
+} */
+.product-see-more {
+    display: block !important;
+    margin: var(--size-9) auto;
 
+    background-color: transparent;
+
+    font-family: var(--font-1);
+    font-size: var(--size-2);
+    color: var(--color-1);
+
+    outline: none;
+    padding: var(--size-1) var(--size-4);
+    border: 1px solid var(--color-1);
+    border-radius: var(--size-1);
+}
 
 
 /* MEDIA QUERIES */
@@ -34,21 +48,5 @@
 
     .product-page-results {
         display: none;
-    }
-
-    .product-see-more {
-        display: block !important;
-        margin: var(--size-9) auto;
-
-        background-color: transparent;
-
-        font-family: var(--font-1);
-        font-size: var(--size-2);
-        color: var(--color-1);
-
-        outline: none;
-        padding: var(--size-1) var(--size-4);
-        border: 1px solid var(--color-1);
-        border-radius: var(--size-1);
     }
 }

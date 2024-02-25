@@ -1,25 +1,27 @@
 import ArtsyText from './ArtsyText';
 import Cart from './Cart';
 import HamburgerMenu from './HamburgerMenu';
+import { NavLink } from 'react-router-dom';
 import NotificationBell from './NotificationBell';
-import Search from './Search';
 
+import Search from './Search';
 import styles from './Navigation.module.css';
-import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
         <>
             {/* Mobile */}
             <nav className={styles['nav_mobile']}>
-                <Link to={'/drawer'} >
+                <NavLink to='/drawer'>
                     <HamburgerMenu />
-                </Link>
+                </NavLink>
                 <ArtsyText />
 
                 <div className="nav_mobile-items">
                     <Search />
-                    <Cart />
+                    <NavLink to='/checkout'>
+                        <Cart />
+                    </NavLink>
                 </div>
             </nav>
             {/* Desktop */}
@@ -28,25 +30,27 @@ function Navigation() {
 
                 <div className={styles['nav_desktop--list-items']}>
                     <li className={`${styles['nav_desktop--list-item']}`}>
-                        <Link to={'/'}>Home</Link>
+                        <NavLink to='/'>Home</NavLink>
                     </li>
 
                     <li className={`${styles['nav_desktop--list-item']}`}>
-                        <Link to={'/products'}>Marketplace</Link>
+                        <NavLink to='/product'>Marketplace</NavLink>
                     </li>
 
                     <li className={`${styles['nav_desktop--list-item']}`}>
-                        <Link to={'/auctions'}>Auctions</Link>
+                        <NavLink to='/auctions'>Auctions</NavLink>
                     </li>
 
                     <li className={`${styles['nav_desktop--list-item']}`}>
-                        <Link to={'/drops'}>Drop</Link>
+                        <NavLink to='/drops'>Drop</NavLink>
                     </li>
                 </div>
 
                 <div className={styles['nav_desktop--list-items']}>
                     <Search />
-                    <Cart />
+                    <NavLink to='/checkout'>
+                        <Cart />
+                    </NavLink>
                     <NotificationBell />
                 </div>
             </nav>

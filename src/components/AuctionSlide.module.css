@@ -9,7 +9,7 @@
 
 .auction-figure-caption {
     position: absolute;
-    left: var(--size-4);
+    left: var(--size-9);
     bottom: var(--size-3);
 
     background-color: #ffffff54;

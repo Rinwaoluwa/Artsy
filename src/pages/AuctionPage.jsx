@@ -29,6 +29,9 @@ function AuctionPage() {
                    <AuctionSlide />
                    <AuctionSlide />
                    <AuctionSlide />
+                   <AuctionSlide />
+                   <AuctionSlide />
+                   <AuctionSlide />
                 </div>
                 <div className={styles['ellipse']}>
                     <Ellipse />

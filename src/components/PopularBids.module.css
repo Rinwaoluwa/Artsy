@@ -79,6 +79,8 @@
 /* MEDIA QUERIES */
 @media(min-width: 50rem) {
     .popular-bid-image {
-        width: max-content;
+        /* width: max-content; */
+        width: 40rem;
+        height: 20rem;
     }
 }

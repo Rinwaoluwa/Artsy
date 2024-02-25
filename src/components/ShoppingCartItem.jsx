@@ -1,7 +1,7 @@
 import CloseX from "./CloseX";
 import styles from "./ShoppingCartItem.module.css";
 
-function ShoppingCartItems() {
+function ShoppingCartItem() {
     return (
         <li className={styles['cart-item']}>
             <div className={styles['cart-item-info']}>
@@ -28,4 +28,4 @@ function ShoppingCartItems() {
     )
 }
 
-export default ShoppingCartItems
+export default ShoppingCartItem

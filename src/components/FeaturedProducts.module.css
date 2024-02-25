@@ -180,13 +180,17 @@
         width: 60rem;
     }
 
+    .featured-creator-image {
+        height: var(--size-6);
+        width: var(--size-6);
+    }
+
+    .featured-product-paragraph {
+        font-size: var(--size-2);
+        right: -3rem;
+    }
+
     .featured--text {
         font-size: var(--size-4);
-    }
-}
-
-@media(min-width: 62.5rem) { /* 2000px */
-    .featured--image {
-        width: 90rem;
     }
 }

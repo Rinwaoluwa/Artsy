@@ -1,20 +1,16 @@
 import Button from "../components/Button";
 import Input from "../components/Input";
-import Navigation from "../components/Navigation";
 import PageRoutes from "../components/PageRoutes";
 import Select from "../components/Select";
 import ShoppingCartItems from "../components/ShoppingCartItems";
-import ShoppingNavigations from "../components/ShoppingNavigations";
 import ShoppingCartStats from "../components/ShoppingCartStats";
 import styles from "./CheckoutPageForm.module.css";
 
 function CheckoutPageForm() {
     return (
         <main className={styles['checkout-form-page']}>
-            <Navigation />
             <div className={styles['checkout-form-page-sub-nav']}>
                 <PageRoutes />
-                <ShoppingNavigations />
             </div>
 
             <section className={styles['checkout-form-section']}>
