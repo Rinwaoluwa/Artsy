@@ -66,9 +66,9 @@
         width: 50%;
         display: flex;
         justify-content: center;
-
         button {
-            width: 40%;
+            width: 30%;
+            margin: auto;
         }
     }
 
