@@ -71,16 +71,17 @@
     }
   </style>
   <script>
-    function handleReload() {
+    function reload() {
       location.reload(true);
     }
+    document.querySelector('.reload-link').addEventListener('click', reload);
   </script>
   </head>
   <body>
     <div class='loader htmlLoader'>
       <div class='gradient-border animateGradient' id='box'>Artsy</div>
       <h3 class='reload'>If this message does not go away, try
-        <a class='reload-link' onclick={handleReload}>reloading</a>.
+        <a class='reload-link'>reloading</a>.
       </h3>
     </div>
     <div id="root"></div>

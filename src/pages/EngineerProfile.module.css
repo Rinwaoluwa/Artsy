@@ -1,0 +1,209 @@
+.text {
+    font-family: var(--font-3);
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+}
+
+/* MOBILE DESIGN */
+.engineer__mobile {
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-2) var(--size-3);
+    height: 100vh;
+
+    .image {
+        border-radius: 50%;
+        height: 30rem;
+        width: 30rem;
+        filter: blur(var(--size-1));
+    }
+
+    .engineer_title_text {
+        font-family: var(--font-1);
+        font-size: var(--size-5);
+        margin-bottom: var(--size-2);
+    }
+
+    .engineer_name_text {
+        align-self: flex-end;
+        margin-right: var(--size-2);
+        margin-top: var(--size-1);
+        font-family: var(--font-1);
+        font-size: var(--size-3);
+    }
+
+    .engineer__note {
+        font-family: var(--font-1);
+        font-size: var(--size-3);
+        font-weight: 500;
+        padding: var(--size-2);
+    }
+}
+
+.engineer__desktop {
+    display: none;
+}
+
+/* DESKTOP DESIGN */
+.engineer__name,
+.engineer__profile,
+.footer {
+    min-height: 100vh;
+	width: 100vw;
+}
+
+.engineer__name,
+.footer {
+    background-color: hsl(0 0% 100%);
+    color: hsl(0 0% 0%);
+}
+
+.engineer__name {
+    height: 200vh;
+
+    svg {
+        --opacity: 1;
+        font-weight: 600;
+        font-size: clamp(2rem, 10vw + 1rem, 10rem);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        opacity: 0.4;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+
+        text {
+            font-family: var(--font-2);
+            font-size: clamp(2rem, 6vw + 1rem, 6rem);
+            font-weight: bold;
+        }
+    }
+
+    .section__content {
+        overflow: hidden;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 100vh;
+    }
+}
+
+.engineer__profile {
+    z-index: 2;
+    color: var(--color-3);
+    min-height: 200vh;
+    background: hsl(0 0% 0%);
+
+    .engineer__note {
+        --opacity: 1;
+        color: var(--color-3);
+        font-family: var(--font-4);
+        font-size: clamp(1.625rem, 2vw + 1rem, 8rem);
+        letter-spacing: 0;
+        font-weight: bold;
+        line-height: 1;
+        width: 30ch;
+        max-width: calc(100% - 4rem);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.section__content {
+	min-height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+.footer  {
+    z-index: 4;
+    .reach {
+        font-family: var(--font-3);
+        font-size: clamp(2rem, 3vw + 1rem, 8rem);
+        text-align: center;
+        margin: 0;
+
+        span {
+            text-transform: uppercase;
+            font-size:var(--size-2);
+            font-family: var(--font-1);
+        }
+    }
+}
+
+
+@supports (animation-timeline: scroll()) {
+    .engineer__name,
+    .engineer__profile,
+    .footer { view-timeline-name: --section; }
+
+    .engineer__name {
+        svg {
+            transform: unset;
+            translate: -50% -50%;
+            animation: blow-out both ease-in, fade-in both ease-in;
+            animation-timeline: --section;
+            animation-range: exit-crossing 10% exit 0%, exit-crossing 10% exit-crossing 25%;
+        }
+    }
+    .engineer__profile {
+        .engineer__note {
+            animation: fade-in both linear, fade-out both linear;
+            animation-timeline: --section;
+            animation-range: entry 10% entry 35%, exit 0% exit 25%;
+        }
+    }
+    .video-wrap {
+      animation: fade-in both linear, fade-out both linear;
+      animation-timeline: --section;
+      animation-range: entry 0% entry 25%, exit 10% exit 35%;
+
+      animation: fade 2 both linear alternate-reverse;
+      animation-timeline: --section;
+      animation-range: entry 0% entry 25%, exit 10% exit 35%;
+    }
+    .video-wrap::after {
+        opacity: 0;
+    }
+
+    @keyframes fade { to { opacity: 0; }}
+    @keyframes fade-in { to { opacity: var(--opacity, 0.2); }}
+    @keyframes fade-out { to { opacity: 0; }}
+    @keyframes fill { to { fill: currentColor; }}
+    @keyframes blow-out {
+      0%, 95% { background: transparent; }
+      to { transform: translateZ(99vh); background: black; }
+    }
+  }
+
+  /* MEDIA QUERY */
+
+@media(min-width: 50rem) {
+    .engineer__mobile {
+        display: none;
+    }
+
+    .engineer__desktop {
+        display:block;
+    }
+
+    .image {
+        position: absolute;
+        right: var(--size-9);
+        border-radius: 50%;
+        width: 40rem;
+        height: 40rem;
+    }
+
+}

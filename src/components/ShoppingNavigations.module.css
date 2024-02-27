@@ -4,32 +4,77 @@
     align-items: center;
 
     background-color: var(--color-1);
-    margin: var(--size-3);
+    margin: var(--size-1) auto;
     padding: var(--size-1) var(--size-2);
 
     border-radius: var(--size-5);
     position: relative;
+    width: 80%;
 }
 
-.shopping-nav-mobile-shop, .shopping-nav-mobile-schedule {
+.tabs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	cursor: pointer;
+    width: 100%;
+
+    a {
+        height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.tabs__indicator {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background-color: var(--color-3);
+	border-radius: 100px;
+	overflow: hidden;
+	transition: translate 0.25s;
+	pointer-events: none;
+}
+
+.tabs__track {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    color: var(--color-1) !important;
+	width: 200%;
+    font-weight: bold;
+	transition: translate 0.25s;
+}
+
+
+.shopping-nav-label {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.25s;
+    border-radius: 100px;
     font-family: var(--font-1);
     font-size: var(--size-3);
-
-    color: var(--color-3);
+    /* clip: rect(0, 0, 0, 0); Bard what this property id for in input checkbox */
 }
 
-.highlight-mobile {
-    color: var(--color-1);
-    background-color: var(--color-3);
-    width: 50%;
-    text-align: center;
-    padding: calc(var(--size-1) - .2rem) calc(var(--size-2) - .6rem);
-    border-radius: var(--size-5);
+.shopping-nav-mobile-input:nth-of-type(2) {
+    right: 0;
+}
+
+.translate__tabs__indicator {
+    translate: 100% 0;
+}
+.translate__tabs__track {
+    translate: -50% 0;
 }
 
 .shopping-nav-desktop {
     display: none;
 }
+
 
 /* MEDIA QUERIES */
 @media(min-width: 50rem) {
@@ -55,8 +100,26 @@
         font-family: var(--font-1);
         font-size: var(--size-4);
         color: var(--color-14);
-
         list-style: none;
+        position: relative;
+    }
+
+    .shopping-nav-li::before {
+        position: absolute;
+        color: var(--color-1);
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        content: attr(alt);
+        transition: all 0.3s;
+        transform: scale(0.8);
+        opacity: 0;
+
+    }
+
+    .shopping-nav-li:hover::before {
+        transform: scale(1);
+        opacity: 1;
     }
 
     .highlight-desktop {

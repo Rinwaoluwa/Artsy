@@ -1,9 +1,10 @@
-import { Suspense, lazy, useEffect, useState } from 'react';
+import { Suspense, lazy, useEffect } from 'react';
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import MobileDrawer from './components/MobileDrawer';
 import GradientLoader from './components/GradientLoader';
 import ShoppingCart from './components/ShoppingCart';
+import EngineerProfile from './pages/EngineerProfile';
 
 const AuctionPage = lazy(() => import('./pages/AuctionPage'));
 const CheckoutPage = lazy(() => import('./pages/CheckoutPage'));
@@ -23,7 +24,6 @@ function App() {
   }, [])
   return (
     <>
-    {/* {isLoading && <GradientLoader />} */}
       <Suspense fallback={<GradientLoader />} >
         <HashRouter>
           <Routes>
@@ -42,6 +42,7 @@ function App() {
               <Route path='thankyou' element={<ThankyouPage />}/>
             </Route>
             {/* END, ALSO ADD A PAGE NOT FOUND COMPONENT */}
+            <Route path='engineer' element={<EngineerProfile />} />
           </Routes>
         </HashRouter>
       </Suspense>

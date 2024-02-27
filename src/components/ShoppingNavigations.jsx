@@ -3,49 +3,56 @@ import { useState } from "react";
 import styles from "./ShoppingNavigations.module.css";
 
 function ShoppingNavigations() {
-    const [highlight, setHighlight] = useState(0);
-
+    const [translateAnimation, setTranslateAnimation] = useState(false);
+    // Use Params Url to check page of app so to add the highlight correctly.
+    //  For shopping NAd desktop because of we use state what if users sends url to someone else ?
+    // the page will not be correctly highlighted
     return (
         <>
             <nav className={styles['shopping-nav-mobile']}>
                 {/* REMEMBER FUNCTION TO SWAP HIGHLIHT WHEN CLICKED */}
                 {/* THE HIGHLIGHT WILL CHANGE THE COLOR OF THE TEXT TO #FFF AS WELL */}
-                    <div className={`${styles['shopping-nav-mobile-shop']} ${highlight === 0 ? `${styles['highlight-mobile']}` : '' }`}
-                        onClick={() => setHighlight(0)}
-                    >
-                        <Link to='cart'>
+                <div className={styles['tabs']}>
+                    <Link to='cart'>
+                        <span className={styles['shopping-nav-label']} onClick={() => setTranslateAnimation(false)}>
                             Shop
-                        </Link>
-                    </div>
-                    <div className={`${styles['shopping-nav-mobile-schedule']} ${highlight ? `${styles['highlight-mobile']}` : '' }`}
-                        onClick={() => setHighlight(1)}
-                    >
-                        <Link to='payment'>
+                        </span>
+                    </Link>
+
+                    <Link to='payment'>
+                        <span className={styles['shopping-nav-label']} onClick={() => setTranslateAnimation(true)}>
                             Payment
-                        </Link>
+                        </span>
+                    </Link>
+
+                    <div className={`${styles['tabs__indicator']} ${translateAnimation && styles['translate__tabs__indicator']}`} aria-hidden="true">
+                        <div className={`${styles['tabs__track']} ${translateAnimation && styles['translate__tabs__track']}`}>
+                            <span className={styles['shopping-nav-label']}>
+                                Shop
+                            </span>
+
+                            <span className={styles['shopping-nav-label']}>
+                                Payment
+                            </span>
+                        </div>
                     </div>
+                </div>
             </nav>
 
             <nav className={styles['shopping-nav-desktop']}>
                 <div className={styles['shopping-nav-lists']}>
                     <Link to='cart'>
-                        <li className={`${styles['shopping-nav-li']} ${highlight === 0 ? `${styles['highlight-desktop']}` : '' }`}
-                            onClick={() => setHighlight(0)}
-                        >
+                        <li alt="Shopping cart" className={`${styles['shopping-nav-li']}`}>
                             Shopping cart
                         </li>
                     </Link>
                     <Link to='shipping'>
-                        <li className={`${styles['shopping-nav-li']} ${highlight === 1 ? `${styles['highlight-desktop']}` : '' }`}
-                            onClick={() => setHighlight(1)}
-                        >
+                        <li alt="Shopping details" className={`${styles['shopping-nav-li']}`}>
                             Shopping details
                         </li>
                     </Link>
                     <Link to='payment'>
-                        <li className={`${styles['shopping-nav-li']} ${highlight === 2 ? `${styles['highlight-desktop']}` : '' }`}
-                            onClick={() => setHighlight(2)}
-                        >
+                        <li alt="Payment details" className={`${styles['shopping-nav-li']}`}>
                             Payment details
                         </li>
                     </Link>

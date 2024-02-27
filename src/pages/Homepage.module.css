@@ -2,7 +2,26 @@
     overflow: hidden;
 }
 
+.desktop-chat-support {
+    display: none;
+}
+
 /* MEDIA QUERIES */
+@media (min-width: 50rem) {
+    .homepage {
+        overflow: hidden;
+        :global(.chatbox-icon) {
+            position: fixed;
+            right: 0;
+            bottom: var(--size-1);
+        }
+    }
+
+    .desktop-chat-support {
+        display: block;
+    }
+}
+
 @media (min-width: 70em) { /*700px*/
     html {
         font-size: 93.6%;

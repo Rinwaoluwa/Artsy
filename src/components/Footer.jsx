@@ -19,6 +19,9 @@ function Footer() {
                 <h4 className={styles['contact-us-text']}>REACH US</h4>
                 <li className={styles['contact-us-list-item']}> <MailIcon /><a href="mailto:peterodejobi9@gmail.com">peterodejobi9@gmail.com</a></li>
                 <li className={styles['contact-us-list-item']}> <LocationIcon /> <strong>Lagos, Nigeria.</strong></li>
+                <Link to='engineer'>
+                    <li className={styles['contact-us-list-item']}> <h1>Engineer</h1> <sup><b>click me</b></sup></li>
+                </Link>
             </div>
 
             {/* Desktop Screen */}
@@ -41,7 +44,9 @@ function Footer() {
                         </li>
                     </ul>
                     <ul className={styles['footer-desktop-widget']}>
-                        <li className={styles['widget-item']}>Developers & Designer</li>
+                        <Link to={'engineer'}>
+                            <li className={styles['widget-item']}>Engineers</li>
+                        </Link>
                         <li className={styles['widget-item']}>Rinwa Odejobi</li>
                         <li className={styles['widget-item']}>Favour Benjamin</li>
                         {/* Get an Api that tell rates and dicovers the country a user is in */}

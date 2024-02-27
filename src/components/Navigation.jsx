@@ -1,13 +1,18 @@
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import ArtsyText from './ArtsyText';
 import Cart from './Cart';
 import HamburgerMenu from './HamburgerMenu';
-import { NavLink } from 'react-router-dom';
 import NotificationBell from './NotificationBell';
 
 import Search from './Search';
 import styles from './Navigation.module.css';
 
 function Navigation() {
+    // Use Params Url to check page of app so to add the highlight correctly
+    //  For shopping NAd desktop because of we use state what if users sends url to someone else ?
+    // the page will not be correctly highlighted
     return (
         <>
             {/* Mobile */}

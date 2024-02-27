@@ -80,7 +80,7 @@
 
         position: absolute;
         top: -5rem;
-        left: var(--size-9);
+        /* left: var(--size-9); */
     }
 
     .cta {
